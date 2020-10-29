@@ -242,7 +242,22 @@ if(j==2):
         plt.title('商品清单')
         plt.show()
     else:
-        print("该商品不存在")
+        window = tk.Tk()
+        window.title('My Window')
+        window.geometry('500x300')  # 这里的乘是小x
+        tk.Label(window, text='商品不存在', bg='red', font=('Arial', 40)).pack()
+        frame = tk.Frame(window)
+        frame.pack()
+
+
+        def insert_point():
+            window.destroy()
+
+
+        b1 = tk.Button(window, text='关闭', width=10,
+                       height=2, command=insert_point)
+        b1.pack()
+        window.mainloop()
 #删除
 if(j==3):
     window = tk.Tk()
@@ -330,7 +345,22 @@ if(j==3):
             plt.title('商品清单')
             plt.show()
         else:
-            print("商品不存在")
+            window = tk.Tk()
+            window.title('My Window')
+            window.geometry('500x300')  # 这里的乘是小x
+            tk.Label(window, text='商品不存在', bg='red', font=('Arial', 40)).pack()
+            frame = tk.Frame(window)
+            frame.pack()
+
+
+            def insert_point():
+                window.destroy()
+
+
+            b1 = tk.Button(window, text='关闭', width=10,
+                           height=2, command=insert_point)
+            b1.pack()
+            window.mainloop()
     if (k == 2):
         jk = -1
         #na = str(input("输入要删除的序号"))
@@ -383,7 +413,22 @@ if(j==3):
             plt.title('商品清单')
             plt.show()
         else:
-            print("商品不存在")
+            window = tk.Tk()
+            window.title('My Window')
+            window.geometry('500x300')  # 这里的乘是小x
+            tk.Label(window, text='商品不存在', bg='red', font=('Arial', 40)).pack()
+            frame = tk.Frame(window)
+            frame.pack()
+
+
+            def insert_point():
+                window.destroy()
+
+
+            b1 = tk.Button(window, text='关闭', width=10,
+                           height=2, command=insert_point)
+            b1.pack()
+            window.mainloop()
 if(j==4):
 
     window = tk.Tk()
@@ -475,7 +520,22 @@ if(j==4):
             plt.title('商品清单')
             plt.show()
         else:
-            print("商品不存在")
+            window = tk.Tk()
+            window.title('My Window')
+            window.geometry('500x300')  # 这里的乘是小x
+            tk.Label(window, text='商品不存在', bg='red', font=('Arial', 40)).pack()
+            frame = tk.Frame(window)
+            frame.pack()
+
+
+            def insert_point():
+                window.destroy()
+
+
+            b1 = tk.Button(window, text='关闭', width=10,
+                           height=2, command=insert_point)
+            b1.pack()
+            window.mainloop()
     if (k == 2):
         #nn = str(input("输入要更改的实验器材名"))
         #na = str(input("输入要更改后的实验器材数量"))
@@ -529,7 +589,22 @@ if(j==4):
             plt.title('商品清单')
             plt.show()
         else:
-            print("商品不存在")
+            window = tk.Tk()
+            window.title('My Window')
+            window.geometry('500x300')  # 这里的乘是小x
+            tk.Label(window, text='商品不存在', bg='red', font=('Arial', 40)).pack()
+            frame = tk.Frame(window)
+            frame.pack()
+
+
+            def insert_point():
+                window.destroy()
+
+
+            b1 = tk.Button(window, text='关闭', width=10,
+                           height=2, command=insert_point)
+            b1.pack()
+            window.mainloop()
 if(j==5):
     window = tk.Tk()
     window.title('My Window')
@@ -560,4 +635,19 @@ if(j==5):
             break
         f.close()
     if(i!=-1):
-        print("商品不存在")
+        window = tk.Tk()
+        window.title('My Window')
+        window.geometry('500x300')  # 这里的乘是小x
+        tk.Label(window, text='商品不存在', bg='red', font=('Arial', 40)).pack()
+        frame = tk.Frame(window)
+        frame.pack()
+
+
+        def insert_point():
+            window.destroy()
+
+
+        b1 = tk.Button(window, text='关闭', width=10,
+                       height=2, command=insert_point)
+        b1.pack()
+        window.mainloop()
